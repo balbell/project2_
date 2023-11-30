@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SERVICES</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+        function displayMessage(service) {
+            alert("You selected the service: " + service);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <h1>BIOMEDICARE PHARMACY</h1>
+        </div>
+
+        <div id="nav">
+            <table>
+                <tr>
+                    <a href="home.html">Home</a>
+                    <a href="service.html">Service</a>
+                    <a href="product.html">Product</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About Us</a>
+                </tr>
+            </table>
+        </div>
+
+        <div class="Services">
+            <table border="0" cellpadding="2" cellspacing="2" width="1000" align="center">
+                <tr>
+                    <th colspan="2" align="center"><h2>Services</h2></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/pressure.jpg" onclick="displayMessage('Reading Blood Pressure')">
+                    </td>
+                    <td>
+                        <h3>Reading Blood Pressure<h3>
+                            <br>We offer customers service of reading their blood pressure when needed for their convenience
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/bekam.jpg" onclick="displayMessage('Cupping Therapy')">
+                    </td>
+                    <td>
+                        <h3>Cupping therapy<h3>
+                            <br>We have a specialized team who are experts in doing cupping therapy
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/vaccs.jpg" onclick="displayMessage('Vaccinations')">
+                    </td>
+                    <td>
+                        <h3>Vaccinations<h3>
+                            <br>We are licensed and trained to give out vaccinations to patients in need
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

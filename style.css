@@ -1,0 +1,148 @@
+	body {
+	background-repeat : repeat;
+	background-attachment : fixed;
+	}
+
+	#container {
+	background-image : url("images/farmasi.jpg");
+	width : 1470px;
+	height : 1030px;
+
+	}
+
+	.column {
+	flex: 2;
+	padding: 10px;
+	border-radius: 10px;
+	}
+
+	.form-container {
+	  background-color: #6F8FAF; 
+	  border: 2px solid #CCCCCC; 
+	  border-radius: 40px; 
+	  padding-left : auto; 
+	  width: 60%; 
+	  margin: auto;
+	}
+	
+	.right-logo {
+	float : right;
+	}
+	
+	.num {
+	text-align : center;
+	color : red;
+	}
+	
+	.box {
+	background-color: #6F8FAF; 
+	border: 2px solid #CCCCCC; 
+	border-radius: 70px; 
+	padding-left : auto; 
+	width: 60%;
+	margin: auto; 
+	text-align : center;
+	}
+
+	#nav {
+	list-style-type : none;
+	height : 876px;
+	margin : 0;
+	padding : 0;
+	width : 200px;
+	background-color : #4682B4;
+	float : left;
+	}
+
+	#content {
+	text-align : center;
+	float : center;
+	}
+
+	img {
+	width : 300px;
+	height : 300px;
+	}
+
+	a {
+	display : block;
+	color : white;
+	text-align : center;
+	padding : 10px 5px;
+	text-decoration : none;}
+
+	a:hover {background-color : #A7C7E7;}
+
+    .detail {
+	font-family : courier new;
+	font-size : 20;
+	
+	}
+
+	#header {
+	color : #A7C7E7;
+	background-color : #000080;
+	padding : 1px;
+	text-align : center;
+	margin-left : auto;
+	margin-right : auto;
+	font-family : lucida handwriting;
+	}
+
+	form {
+	padding : 10px;
+	}
+
+	h3 {
+	color : #000000;
+	font-family : courier new;
+	}
+	
+	.Products{
+
+	margin-top: 50px;
+	margin-left: 220px;
+	margin-right: 20px;
+	background-color: #6F8FAF;
+	text-align: center;
+	font-family: "Lucida Console", "Courier New", monospace;
+	border-radius: 40px;
+	}
+	
+	.Products img{
+		width: 220px;
+		height: 220px;
+	}
+
+	.Services{
+
+	margin-top: 50px;
+	margin-left: 220px;
+	margin-right: 20px;
+	background-color: #6F8FAF;
+	text-align: center;
+	font-family: "Lucida Console", "Courier New", monospace;
+	border-radius: 40px;
+	}
+	
+	.Services img{
+		width: 200px;
+		height:200px;
+	}
+	
+	#txt {
+		font-size : 60px;
+		color : #A7C7E7;
+		background-color : #000080;
+		
+	}
+	#cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+}

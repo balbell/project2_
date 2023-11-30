@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PRODUCTS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body onload="startTime()">
+    <div id="container">
+
+        <div id="header">
+            <h1>BIOMEDICARE PHARMACY</h1>
+        </div>
+
+        <div id="txt" align="center"></div>
+
+        <script>
+            function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                };
+                return i;
+            }
+        </script>
+
+        <div id="nav">
+            <table>
+                <tr>
+                    <a href="home.html">Home</a>
+                    <a href="service.html">Service</a>
+                    <a href="product.html">Product</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About Us</a>
+                </tr>
+            </table>
+        </div>
+
+        <div class="Products">
+            <table border="0" cellpadding="2" cellspacing="2" width="500" align="center">
+                <tr>
+                    <th colspan="4" align="center"><h2>Products</h2></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/medicine.jpg" width="90" height="90"> <br>Medicine
+                        <br>
+                        <button onclick="addToCart('Medicine')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/wchair.jpg" width="90" height="90"> <br>Movement Assistance
+                        <br>
+                        <button onclick="addToCart('Movement Assistance')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/bodywash.jpg" width="90" height="90"> <br>Body Wash
+                        <br>
+                        <button onclick="addToCart('Body Wash')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/blood.jpg" width="90" height="90"> <br>Medical Equipments
+                        <br>
+                        <button onclick="addToCart('Medical Equipments')">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/aid.jpg" width="90" height="90"> <br>First Aid Equipments
+                        <br>
+                        <button onclick="addToCart('First Aid Equipments')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/epipen.jpg" width="90" height="90"> <br>Epipens
+                        <br>
+                        <button onclick="addToCart('Epipens')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/mask.jpg" width="90" height="90"> <br>Face Mask
+                        <br>
+                        <button onclick="addToCart('Face Mask')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/supps.jpg" width="90" height="90"> <br>Supplements
+                        <br>
+                        <button onclick="addToCart('Supplements')">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/inhaler.jpeg" width="90" height="90"> <br>Inhaler
+                        <br>
+                        <button onclick="addToCart('Inhaler')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/bed.jpg" width="90" height="90"> <br>Hospital Bed
+                        <br>
+                        <button onclick="addToCart('Hospital Bed')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/serum.jpg" width="90" height="90"> <br>Face Serum
+                        <br>
+                        <button onclick="addToCart('Face Serum')">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="images/oil.jpg" width="90" height="90"> <br>Hair Oil
+                        <br>
+                        <button onclick="addToCart('Hair Oil')">Add to Cart</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+        </div>
+
+        <script>
+            let cartItems = [];
+
+            function addToCart(item) {
+                cartItems.push(item);
+                updateCartDisplay();
+            }
+
+            function updateCartDisplay() {
+                const cartList = document.getElementById('cart-items');
+                cartList.innerHTML = ''; 
+
+                cartItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = item;
+                    cartList.appendChild(listItem);
+                });
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
